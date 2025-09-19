@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manu’s Cool Pizza Site 🍕</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Comic Sans MS, cursive, sans-serif; 
+      background-color: #ffeedd; 
+    }
+
+    .Nav {
+      background-color: tomato; 
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 15px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: yellow; 
+      font-weight: bold;
+    }
+
+    /* Hide the checkbox */
+    #menuToggle {
+      display: none;
+    }
+
+    /* Hamburger icon */
+    .menu-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-icon span {
+      width: 30px;
+      height: 4px;
+      background: white;
+      margin: 5px;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: tomato;
+        flex-direction: column;
+        width: 180px;
+        padding: 15px;
+      }
+
+      .nav-links li {
+        margin: 12px 0;
+      }
+
+
+      #menuToggle:checked ~ .nav-links {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: flex;
+      }
+    }
+
+    .hero {
+      text-align: center;
+      margin: 40px 20px;
+    }
+
+    .hero h2 {
+      font-size: 28px;
+      font-weight: bold;
+      color: darkgreen;
+    }
+
+    .hero p {
+      color: #333;
+      font-style: italic;
+    }
+
+    .hero img {
+      margin-top: 20px;
+      width: 250px;
+    }
+
+    .hehe {
+      background: #ffffaa;
+      padding: 20px;
+      margin: 40px 20px;
+      border-radius: 12px;
+    }
+
+    .hehe h3 {
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    footer {
+      background: pink;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="Nav">
+    <div class="logo">🍕 PizzaCode</div>
+    <input type="checkbox" id="menuToggle">
+    <label for="menuToggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <ul class="nav-links">
+      <li><a href="#">🏠 Home</a></li>
+      <li><a href="#">🍴 Menu</a></li>
+      <li><a href="#">ℹ️ About</a></li>
+      <li><a href="#">📞 Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>Pizza + Code = ❤️</h2>
+    <p>bruh trust me this site is delicious...</p>
+    <img src="—Pngtree—pizza with fire_20386989.png" alt="Pizza">
+  </section>
+
+  <section class="hehe">
+    <h3>People literally said this:</h3>
+    <ul>
+      <li>"Best crust since sliced bread!" – Some Guy</li>
+      <li>"I ate the website." – Probably Jeff</li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 PizzaCode. made by Manu 😎
+  </footer>
+
+</body>
+</html>

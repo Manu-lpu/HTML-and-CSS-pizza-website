@@ -1,0 +1,27 @@
+    header {
+      background-color: #fac146;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #ffffff;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+
+     nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+    }
