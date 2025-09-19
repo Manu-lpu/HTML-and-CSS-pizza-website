@@ -1,27 +1,120 @@
-    header {
-      background-color: #fac146;
-      padding: 20px 40px;
+body {
+      margin: 0;
+      font-family: Comic Sans MS, cursive, sans-serif; 
+      background-color: #ffeedd; 
+    }
+
+    .Nav {
+      background-color: tomato; 
+      color: white;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 20px;
+      position: relative;
     }
 
-    header h1 {
-      color: #ffffff;
+    .logo {
+      font-weight: bold;
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 15px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: yellow; 
+      font-weight: bold;
+    }
+
+    /* Hide the checkbox */
+    #menuToggle {
+      display: none;
+    }
+
+    /* Hamburger icon */
+    .menu-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-icon span {
+      width: 30px;
+      height: 4px;
+      background: white;
+      margin: 5px;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: tomato;
+        flex-direction: column;
+        width: 180px;
+        padding: 15px;
+      }
+
+      .nav-links li {
+        margin: 12px 0;
+      }
+
+
+      #menuToggle:checked ~ .nav-links {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: flex;
+      }
+    }
+
+    .hero {
+      text-align: center;
+      margin: 40px 20px;
+    }
+
+    .hero h2 {
       font-size: 28px;
       font-weight: bold;
+      color: darkgreen;
     }
 
-
-     nav ul {
-      list-style: none;
-      display: flex;
-      gap: 25px;
+    .hero p {
+      color: #333;
+      font-style: italic;
     }
 
-    nav a {
-      text-decoration: none;
-      color: white;
+    .hero img {
+      margin-top: 20px;
+      width: 250px;
+    }
+
+    .hehe {
+      background: #ffffaa;
+      padding: 20px;
+      margin: 40px 20px;
+      border-radius: 12px;
+    }
+
+    .hehe h3 {
       font-weight: bold;
-      font-size: 16px;
+      font-size: 24px;
+    }
+
+    footer {
+      background: pink;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+      font-size: 14px;
     }
